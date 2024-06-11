@@ -7,23 +7,26 @@ background: rgba(217, 217, 217, 0.1);
 backdrop-filter: blur(50px);
 padding: 25px  10%;
 box-sizing: border-box;
+position: fixed;
+top: 0;
+z-index: 10;
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 `
-   
+
 const ImgStyle = styled.img`
     width: 61px;
-`
+    `
 
 const UlSyle = styled.ul`
     display: flex;
     gap: 32px;
     list-style: none;
     align-items: center;
-`
+    `
 
 const Links = styled.a`
 color: #F4F4F5;
@@ -40,6 +43,12 @@ const Btn = styled.button`
     background: none;
     filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 25%));
     border-radius: 20px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    &:hover{
+        border-color: #A1A1A1;
+        filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 40%));
+    }
 `
 
 const Header = () => {
