@@ -1,4 +1,4 @@
-import { FaReact, FaGithub, FaHtml5, FaCss3, FaSass, FaGitAlt, FaBootstrap } from "react-icons/fa"
+import { FaReact, FaGithub, FaHtml5, FaCss3, FaSass, FaGitAlt, FaBootstrap, FaPhp  } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io5"
 
 const IconosARecorrer = [
@@ -41,6 +41,12 @@ const IconosARecorrer = [
       icono: <FaBootstrap />,
       name: 'Bootstrap 5',
       id: 8
+    }
+    ,
+    {
+      icono: <FaPhp />,
+      name: 'PHP',
+      id: 9
     }
 ]
 

@@ -1,0 +1,46 @@
+{
+  "card-project": [
+    {
+      "id": 1,
+      "titulo":"AluraFlix",
+      "img":"encriptador.webp",
+      "link": "",
+      "iconos": []
+    },
+    {
+      "id": 2,
+      "titulo":"Encriptador",
+      "img":"encriptador.webp",
+      "link": "",
+      "iconos": []
+    },
+    {
+      "id": 3,
+      "titulo":"Piedra Papel y Tijeras",
+      "img":"rock_paper_scissors_game.webp",
+      "link": "",
+      "iconos": []
+    },
+    {
+      "id": 4,
+      "titulo":"Etch A Sketch",
+      "img":"etch_a_sketch.webp",
+      "link": "",
+      "iconos": []
+    },
+    {
+      "id": 5,
+      "titulo":"AluraGeek",
+      "img":"alura-geek-project.png",
+      "link": "",
+      "iconos": []
+    },
+    {
+      "id": 6,
+      "titulo":"Seleccionador de personajes",
+      "img":"juego_de_seleccion.webp",
+      "link": "",
+      "iconos": []
+    }
+  ]
+}
