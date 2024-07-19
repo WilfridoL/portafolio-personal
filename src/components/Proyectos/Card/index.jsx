@@ -1,6 +1,8 @@
 import React from 'react'
 import { FiExternalLink } from "react-icons/fi";
 import styled from 'styled-components';
+import { FaReact, FaGithub, FaHtml5, FaCss3, FaSass, FaGitAlt, FaBootstrap, FaPhp  } from "react-icons/fa"
+import { IoLogoJavascript } from "react-icons/io5"
 
 const Container = styled.div`
   width: 430px;
@@ -30,8 +32,13 @@ const Container = styled.div`
       flex-direction: column;
       font-size: 16px;
       gap: 10px;
+      .container-icon{
+        display: flex;
+        gap: 10px;
+      }
     }
-    a{
+    .link{
+      a{
       color: inherit;
       font-size: 20px;
       transition: all .3s ease-in;
@@ -39,6 +46,8 @@ const Container = styled.div`
         color: #A1A1A1;
       }
     }
+    }
+
   }
 `
 
@@ -49,10 +58,10 @@ const Card = ({dataProject}) => {
     <div className="container-text">
       <div className="text">
         <p>{titulo}</p>
-        <div className="">iconos</div>
+        <div className="container-icon"></div>
       </div>
       <div className="link">
-        <a href=""><FiExternalLink /></a>
+        <a href={link} target='_blank'><FiExternalLink /></a>
       </div>
     </div>
   </Container>

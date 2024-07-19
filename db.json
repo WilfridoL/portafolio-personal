@@ -3,43 +3,43 @@
     {
       "id": 1,
       "titulo":"AluraFlix",
-      "img":"encriptador.webp",
-      "link": "",
-      "iconos": []
+      "img":"alura-flix-project.webp",
+      "link": "https://alura-flix-by-wilbev.vercel.app/",
+      "iconos": ["pedro"]
     },
     {
       "id": 2,
       "titulo":"Encriptador",
       "img":"encriptador.webp",
-      "link": "",
+      "link": "https://wilfridol.github.io/ENCRIPTADOR-ORNG/",
       "iconos": []
     },
     {
       "id": 3,
       "titulo":"Piedra Papel y Tijeras",
       "img":"rock_paper_scissors_game.webp",
-      "link": "",
+      "link": "https://wilfridol.github.io/Rock-Paper-Scissors/",
       "iconos": []
     },
     {
       "id": 4,
       "titulo":"Etch A Sketch",
       "img":"etch_a_sketch.webp",
-      "link": "",
+      "link": "https://wilfridol.github.io/-Etch-a-Sketch-Project/",
       "iconos": []
     },
     {
       "id": 5,
       "titulo":"AluraGeek",
       "img":"alura-geek-project.png",
-      "link": "",
+      "link": "https://alura-geek-sigma-liard.vercel.app/",
       "iconos": []
     },
     {
       "id": 6,
       "titulo":"Seleccionador de personajes",
       "img":"juego_de_seleccion.webp",
-      "link": "",
+      "link": "https://wilfridol.github.io/select-your-character-ES/",
       "iconos": []
     }
   ]
