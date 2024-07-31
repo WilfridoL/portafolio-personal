@@ -34,7 +34,8 @@ const Container = styled.div`
       gap: 10px;
       .container-icon{
         display: flex;
-        gap: 10px;
+        font-size: 18px;
+        gap: 7px;
       }
     }
     .link{
@@ -58,7 +59,9 @@ const Card = ({dataProject}) => {
     <div className="container-text">
       <div className="text">
         <p>{titulo}</p>
-        <div className="container-icon"></div>
+        <div className="container-icon">
+          {iconos.map(e => <i className={`fa-brands ${e}`} key={e.index}/>)}
+        </div>
       </div>
       <div className="link">
         <a href={link} target='_blank'><FiExternalLink /></a>

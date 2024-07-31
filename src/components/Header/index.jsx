@@ -36,7 +36,7 @@ transition: all .3s ease-in;
 }
 `
 
-const Btn = styled.button`
+export const Btn = styled.button`
     color: #F4F4F5;
     padding: 6px 15px;
     border: 2px solid #F4F4F5;
