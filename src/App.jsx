@@ -16,20 +16,12 @@ const Espaciado = styled.main`
 `
 
 function App() {
-  const { t, i18n } = useTranslation();
-
-  const handleChangeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+ const {t, i18n} = useTranslation("translation")
+ console.log(t);
+ 
   return <>
       <Header />
       <Home />
-      <div>
-      <h1>{t('welcome')}</h1>
-      <p>{t('description')}</p>
-      <button onClick={() => handleChangeLanguage('en')}>English</button>
-      <button onClick={() => handleChangeLanguage('es')}>Español</button>
-    </div>
       <Espaciado>
         <AboutMe />
         <TecnologiaContainer />
