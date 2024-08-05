@@ -1,3 +1,7 @@
+import { useState } from "react"
+import { FaBars } from "react-icons/fa"
+import { IoClose } from "react-icons/io5"
+import { RiCloseLargeLine } from "react-icons/ri"
 import styled from "styled-components"
 
 const HeaderStyle = styled.header`
@@ -22,11 +26,36 @@ const ImgStyle = styled.img`
     `
 
 const UlSyle = styled.ul`
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    align-items: center;
-    `
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  @media (max-width: 600px){
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 100%;
+    padding: 0px 16px 30px 16px;
+    background: #172554;
+    font-size: 24px;
+    flex-direction: column;
+    border-top: 0.5px solid #F4F4F5;
+    border-bottom: 1px solid #F4F4F5;
+    gap: 0px;
+		transition: all .2s ease-in-out;
+    li{
+      width: 100%;
+      border-bottom: 0.5px solid #F4F4F5;
+      text-align: center;
+      padding: 30px 0px;
+    }
+  }
+  &.active{
+		left : 0;
+  }
+`
 
 const Links = styled.a`
 color: #F4F4F5;
@@ -36,33 +65,63 @@ transition: all .3s ease-in;
 }
 `
 
-export const Btn = styled.button`
-    color: #F4F4F5;
-    padding: 6px 15px;
-    border: 2px solid #F4F4F5;
+const Btn = styled.button`
+  color: #F4F4F5;
+  padding: 6px 15px;
+  border: 2px solid #F4F4F5;
+  background: none;
+  filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 25%));
+  border-radius: 20px;
+  transition: all .3s ease-in;
+	font-size: 16px;
+  cursor: pointer;
+  &:hover{
+    border-color: #A1A1A1;
+    filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 40%));
+  }
+	@media (max-width: 600px){
+		margin-top: 30px;
+		padding: 8px 20px;
+		font-size: 24px;
+	}
+`
+
+const Toggle = styled.button`
+    display: none;
     background: none;
-    filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 25%));
-    border-radius: 20px;
-    transition: all .3s ease-in;
-    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: #F4F4F5;
+    transition: all .2s ease-in;
     &:hover{
-        border-color: #A1A1A1;
-        filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 40%));
+        color: rgba(244, 244, 245, 80%);
+    }
+    @media (max-width: 600px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 `
 
 const Header = () => {
-    return <HeaderStyle>
+    const [activeToggle, setActiveToggle] = useState(false)
+    return <>
+    <HeaderStyle>
         <nav>
             <ImgStyle src="./logo.png" alt="logo" />
-            <UlSyle>
+            <UlSyle className={activeToggle ? "active" : ""}>
                 <li><Links href="#">Inicio</Links></li>
                 <li><Links href="#">Sobre mí</Links></li>
                 <li><Links href="#">Proyectos</Links></li>
                 <Btn>ES</Btn>
             </UlSyle>
+            <Toggle onClick={() => setActiveToggle(!activeToggle)}>
+                {activeToggle ? <RiCloseLargeLine /> : <FaBars />}
+            </Toggle>
         </nav>
     </HeaderStyle>
+    </>
 }
 
 export default Header

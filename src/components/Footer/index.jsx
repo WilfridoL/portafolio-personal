@@ -25,6 +25,9 @@ const Links = styled.a`
   &:hover{
     color: #A1A1A1;
   }
+  @media (max-width: 350px){
+    display: block;
+  }
 `
 
 const Footer = () => {

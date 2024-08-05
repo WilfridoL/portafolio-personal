@@ -8,6 +8,7 @@ const HomeStyle = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   margin-top: 85px;
   p, h4{
     color: #F4F4F5;
