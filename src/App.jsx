@@ -16,12 +16,9 @@ const Espaciado = styled.main`
 `
 
 function App() {
-  const { i18n} = useTranslation()
   return <>
       <Header />
       <Home />
-    <button onClick={() => i18n.changeLanguage("es")}>es</button>
-    <button onClick={() => i18n.changeLanguage("en")}>en</button>
       <Espaciado>
         <AboutMe />
         <TecnologiaContainer />
