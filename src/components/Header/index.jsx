@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { FaBars } from "react-icons/fa"
 import { IoClose } from "react-icons/io5"
 import { RiCloseLargeLine } from "react-icons/ri"
@@ -106,15 +107,26 @@ const Toggle = styled.button`
 
 const Header = () => {
     const [activeToggle, setActiveToggle] = useState(false)
+    const [change, setChange] = useState(true)
+    const {t, i18n} = useTranslation()
+    const language = () => {
+      if(change === true){
+        i18n.changeLanguage("en")
+      }else{
+        i18n.changeLanguage("es")
+      }
+    }
+    console.log(change);
+    
     return <>
     <HeaderStyle>
         <nav>
             <ImgStyle src="./logo.png" alt="logo" />
             <UlSyle className={activeToggle ? "active" : ""}>
-                <li><Links href="#">Inicio</Links></li>
-                <li><Links href="#">Sobre mí</Links></li>
-                <li><Links href="#">Proyectos</Links></li>
-                <Btn>ES</Btn>
+                <li><Links href="#">{t("header.linkHome")}</Links></li>
+                <li><Links href="#">{t("header.linkAboutMe")}</Links></li>
+                <li><Links href="#">{t("header.linkProject")}</Links></li>
+                <Btn onClick={() => {setChange(!change); language()}}>{change ? "ES" : "EN"}</Btn>
             </UlSyle>
             <Toggle onClick={() => setActiveToggle(!activeToggle)}>
                 {activeToggle ? <RiCloseLargeLine /> : <FaBars />}

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import ContenidoEstilosGenerales from "../ContenidoEstilos"
+import { useTranslation } from "react-i18next"
 
 const Parrafo = styled.div`
   max-width: 600px;
@@ -14,16 +15,13 @@ const Parrafo = styled.div`
 `
 
 const AboutMe = () => {
+  const {t} = useTranslation()
+
   return <ContenidoEstilosGenerales>
-    <h3>Sobre mi</h3>
+    <h3>{t("aboutMe.title")}</h3>
     <Parrafo>
-      <p>
-        Soy un desarrollador web que le fascina el mundo del arte y el manga. Más allá de las líneas de código, me encanta explorar el mundo de la pintura y el dibujo,
-      </p>
-      <p>
-        sumergiéndome en el arte y embarcarme en nuevas experiencias y desafíos.
-        Para mí, la programación no es solo una profesión, es una forma de expresión. Al igual que un artista trabaja con colores y formas para crear una obra maestra, yo utilizo lenguajes de programación y algoritmos para dar vida a ideas innovadoras y soluciones creativas.
-      </p>
+      <p>{t("aboutMe.text")}</p>
+      <p>{t("aboutMe.text2")}</p>
     </Parrafo>
   </ContenidoEstilosGenerales>
 }

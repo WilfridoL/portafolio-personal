@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import styled from "styled-components"
 
 const HomeStyle = styled.div`
@@ -24,10 +25,11 @@ const HomeStyle = styled.div`
 `
 
 const Home = () => {
+  const {t} = useTranslation()
   return <HomeStyle>
-    <p>Hola, soy</p>
+    <p>{t("home.p")}</p>
     <h2>Wilfrido Adarraga</h2>
-    <h4>Desarrollador front end & Diseñador UI</h4>
+    <h4>{t("home.h4")}</h4>
   </HomeStyle>
 }
 

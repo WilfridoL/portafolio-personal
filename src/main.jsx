@@ -8,8 +8,9 @@ import global_en from './locales/en/translation.json'
 import global_es from './locales/es/translation.json'
 
 i18next.init({
-  interPolation: {escapeValue: false},
-  lng: "en",
+  interpolation: {escapeValue: false},
+  lng: "es",
+  defaultNS: 'global',
   resources: {
     es:{
       global: global_es
@@ -18,7 +19,6 @@ i18next.init({
       global: global_en
     }
   }
-
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(

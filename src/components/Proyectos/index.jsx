@@ -2,6 +2,7 @@ import styled from "styled-components"
 import ContenidoEstilosGenerales from "../ContenidoEstilos"
 import Card from "./Card"
 import { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
 
 const Titulo = styled.h3`
   margin-left: 32px;
@@ -44,6 +45,7 @@ const BtnContainer = styled.div`
   }
 `
 const Proyectos = () => {
+  const {t} = useTranslation()
   const [active, setActive] = useState(false)
   const StyleCard = styled.div`
     width: 100%;
@@ -64,13 +66,13 @@ const Proyectos = () => {
     getData()
   }, [])
   return<div>
-    <Titulo>Proyectos</Titulo>
+    <Titulo>{t("project.title")}</Titulo>
     <StyleCard>
       {data.map(event => <Card dataProject={event} key={event.id} />)}
     </StyleCard>
     <BtnContainer>
       <span></span>
-      <button onClick={() => setActive(!active)}>{active ? "Mostrar menos" : "Mostrar más"}</button>
+      <button onClick={() => setActive(!active)}>{active ? t("project.buttonTextActive") : t("project.buttonText")}</button>
     </BtnContainer>
     </div>
 }

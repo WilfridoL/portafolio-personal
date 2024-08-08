@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { SiGmail } from "react-icons/si";
 import styled from "styled-components";
@@ -31,8 +32,10 @@ const Links = styled.a`
 `
 
 const Footer = () => {
+  const {t} = useTranslation()
+
   return <PieDePagina>
-    <h2>Desarrollado por WilDev</h2>
+    <h2>{t("footer")}</h2>
     <div>
       <Links href="http://" target="_blank" rel="noopener noreferrer"><FaGithub /></Links>
       <Links href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Links>

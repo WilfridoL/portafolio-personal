@@ -1,4 +1,23 @@
 {
-  "welcome": "Welcome to React",
-  "description": "This is a description"
+  "header": {
+    "linkHome":"Home",
+    "linkAboutMe":"About me",
+    "linkProject":"Projects"
+  },
+  "home": {
+    "p": "Hi, I'm",
+    "h4":"Front end developer and UI designer"
+  },
+  "aboutMe":{
+    "title":"About me",
+    "text":"I am a web developer who is fascinated by the world of art and manga. Beyond lines of code, I love exploring the realms of painting and drawing, immersing myself in art and embarking on new experiences and challenges.",
+    "text2":"For me, programming is not just a profession; it is a form of expression. Just as an artist works with colors and shapes to create a masterpiece, I use programming languages and algorithms to bring innovative ideas and creative solutions to life."
+  },
+  "technology": "Technology",
+  "project":{
+    "title":"Projects",
+    "buttonText":"Show more",
+    "buttonTextActive":"Show less"
+  },
+  "footer": "Developed by WilDev"
 }
