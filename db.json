@@ -3,42 +3,42 @@
     {
       "id": 1,
       "titulo":"AluraFlix",
-      "img":"alura-flix-project.webp",
+      "img":"./img/alura-flix-project.webp",
       "link": "https://alura-flix-by-wilbev.vercel.app/",
       "iconos": ["fa-html5", "fa-css3", "fa-js","fa-react"]
     },
     {
       "id": 2,
       "titulo":"Encriptador",
-      "img":"encriptador.webp",
+      "img":"./img/encriptador.webp",
       "link": "https://wilfridol.github.io/ENCRIPTADOR-ORNG/",
       "iconos": ["fa-html5", "fa-css3", "fa-js"]
     },
     {
       "id": 3,
       "titulo":"Piedra Papel y Tijeras",
-      "img":"rock_paper_scissors_game.webp",
+      "img":"./img/rock_paper_scissors_game.webp",
       "link": "https://wilfridol.github.io/Rock-Paper-Scissors/",
       "iconos": ["fa-html5", "fa-css3", "fa-sass", "fa-js"]
     },
     {
       "id": 4,
       "titulo":"Etch A Sketch",
-      "img":"etch_a_sketch.webp",
+      "img":"./img/etch_a_sketch.webp",
       "link": "https://wilfridol.github.io/-Etch-a-Sketch-Project/",
       "iconos": ["fa-html5", "fa-css3", "fa-sass", "fa-js"]
     },
     {
       "id": 5,
       "titulo":"AluraGeek",
-      "img":"alura-geek-project.png",
+      "img":"./img/alura-geek-project.png",
       "link": "https://alura-geek-sigma-liard.vercel.app/",
       "iconos": ["fa-html5", "fa-css3", "fa-sass", "fa-js"]
     },
     {
       "id": 6,
       "titulo":"Seleccionador de personajes",
-      "img":"juego_de_seleccion.webp",
+      "img":"./img/juego_de_seleccion.webp",
       "link": "https://wilfridol.github.io/select-your-character-ES/",
       "iconos": ["fa-html5", "fa-css3", "fa-sass", "fa-js"]
     }

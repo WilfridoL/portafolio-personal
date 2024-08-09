@@ -55,7 +55,7 @@ const Container = styled.div`
 const Card = ({dataProject}) => {
   const {titulo, img, link, iconos} = dataProject
   return <Container>
-    <div className="container-img"><img src={`../../../../public/img/${img}`} alt={titulo} /></div>
+    <div className="container-img"><img src={img} alt={titulo} /></div>
     <div className="container-text">
       <div className="text">
         <p>{titulo}</p>
