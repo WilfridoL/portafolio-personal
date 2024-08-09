@@ -59,7 +59,7 @@ const Proyectos = () => {
   const [data, setData] = useState([])
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch('http://localhost:3000/card-project')
+      const response = await fetch('https://my-json-server.typicode.com/WilfridoL/portafolio-personal/card-project')
       const db = await response.json()
       setData([...db])
     }
