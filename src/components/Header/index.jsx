@@ -123,9 +123,9 @@ const Header = () => {
         <nav>
             <ImgStyle src="./logo.png" alt="logo" />
             <UlSyle className={activeToggle ? "active" : ""}>
-                <li><Links href="#">{t("header.linkHome")}</Links></li>
-                <li><Links href="#">{t("header.linkAboutMe")}</Links></li>
-                <li><Links href="#">{t("header.linkProject")}</Links></li>
+                <li><Links href="#home">{t("header.linkHome")}</Links></li>
+                <li><Links href="#about">{t("header.linkAboutMe")}</Links></li>
+                <li><Links href="#prj">{t("header.linkProject")}</Links></li>
                 <Btn onClick={() => {setChange(!change); language()}}>{change ? "ES" : "EN"}</Btn>
             </UlSyle>
             <Toggle onClick={() => setActiveToggle(!activeToggle)}>

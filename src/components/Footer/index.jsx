@@ -37,9 +37,9 @@ const Footer = () => {
   return <PieDePagina>
     <h2>{t("footer")}</h2>
     <div>
-      <Links href="http://" target="_blank" rel="noopener noreferrer"><FaGithub /></Links>
-      <Links href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Links>
-      <Links href="http://" target="_blank" rel="noopener noreferrer"><SiGmail /></Links>
+      <Links href="https://github.com/WilfridoL" target="_blank" rel="noopener noreferrer"><FaGithub /></Links>
+      <Links href="https://www.linkedin.com/in/wilfrido-adarraga-aa99a0238/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Links>
+      <Links href="mailto:wilfridorafaellawson@gmail.com" target="_blank" rel="noopener noreferrer"><SiGmail /></Links>
     </div>
   </PieDePagina>
 }

@@ -17,7 +17,7 @@ const Parrafo = styled.div`
 const AboutMe = () => {
   const {t} = useTranslation()
 
-  return <ContenidoEstilosGenerales>
+  return <ContenidoEstilosGenerales id="about">
     <h3>{t("aboutMe.title")}</h3>
     <Parrafo>
       <p>{t("aboutMe.text")}</p>

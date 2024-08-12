@@ -26,7 +26,7 @@ const HomeStyle = styled.div`
 
 const Home = () => {
   const {t} = useTranslation()
-  return <HomeStyle>
+  return <HomeStyle id='home'>
     <p>{t("home.p")}</p>
     <h2>Wilfrido Adarraga</h2>
     <h4>{t("home.h4")}</h4>

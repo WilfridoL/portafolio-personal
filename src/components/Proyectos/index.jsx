@@ -65,7 +65,7 @@ const Proyectos = () => {
     }
     getData()
   }, [])
-  return<div>
+  return<div id="prj">
     <Titulo>{t("project.title")}</Titulo>
     <StyleCard>
       {data.map(event => <Card dataProject={event} key={event.id} />)}
